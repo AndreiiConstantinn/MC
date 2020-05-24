@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Alarm Flip</string>
+
+    <string name="text_alarm_status">No alarm set</string>
+    <string name="button_set_alarm">Set alarm</string>
+    <string name="button_cancel_alarm">Cancel alarm</string>
+    <string name="aggressive">Aggressive</string>
+    <string name="gentle">Gentle</string>
+    <string name="presentDelayChoice">Choose delay mode:</string>
+</resources>

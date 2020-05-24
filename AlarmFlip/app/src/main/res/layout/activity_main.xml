@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a8dadc"
+    android:gravity="top|end"
+    tools:context="com.application.alarmflip.MainActivity">
+
+    <TextView
+        android:id="@+id/text_alarm_status"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#00C82121"
+        android:clickable="false"
+        android:drawableTint="#FFFFFF"
+        android:foregroundTint="#FFFFFF"
+        android:gravity="center|center_vertical"
+        android:text="@string/text_alarm_status"
+        android:textColor="#1d3557"
+        android:textColorLink="#FFFFFF"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button_set_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_alarm_status"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#457B9D"
+        android:text="@string/button_set_alarm"
+        android:textColor="#F1FAEE"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_cancel_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_set_alarm"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#457B9D"
+        android:text="@string/button_cancel_alarm"
+        android:textColor="#F1FAEE"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp">
+
+        <RadioButton
+            android:id="@+id/radio_aggressive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#E63946"
+            android:checked="false"
+            android:onClick="checkButton"
+            android:text="@string/aggressive"
+            android:textColor="#1D3557"
+            android:textColorHighlight="#e63946"
+            android:textColorLink="#e63946"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radio_gentle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#E63946"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="@string/gentle"
+            android:textColor="#1D3557"
+            android:textColorHighlight="#e63946"
+            android:textColorLink="#e63946"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_cancel_alarm"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/presentDelayChoice"
+        android:textColor="#1D3557" />
+
+</RelativeLayout>

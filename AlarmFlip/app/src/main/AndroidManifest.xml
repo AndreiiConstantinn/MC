@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.application.alarmflip">
+<application
+    android:allowBackup="true"
+    android:icon="@drawable/ic_digital_clock"
+    android:label="Alarm Flip"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <activity android:name="com.application.alarmflip.MainActivity"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <receiver android:name="com.application.alarmflip.AlertReceiver" />
+</application>
+</manifest>
